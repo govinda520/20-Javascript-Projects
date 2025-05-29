@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "";
+  src: url();
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.screen {
+  width: 45%;
+  height: 45%;
+  background-color: black !important;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit:cover;
+  object-position: center;
+}
+
+.controls .btn img {
+  height: 20px;
+}
+
+.controls .btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.controls {
+  background-color: #333;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  gap: 5px;
+}
+
+.controls .timestamp {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 80%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
